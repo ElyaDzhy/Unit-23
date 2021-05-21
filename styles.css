@@ -38,3 +38,53 @@ div {
 div + div {
   margin-top: 30px;
 }
+/* 
+xs <576px	 extra small
+sm ≥576px	 small
+md ≥768px	 
+lg ≥992px	
+xl ≥1200px	
+xxl ≥1400px */
+
+/* mobile first
+
+  desctop first*/
+/*
+adaptive methods
+
+em rem
+%
+vh vw vmin vmax
+flexible box
+
+media-queries
+@media
+
+px
+
+*/
+/* mobile first: */
+/* :root {
+  font-size: 10px;
+} */
+
+@media screen and (min-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  :root {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 24px;
+  }
+}
