@@ -1,16 +1,3 @@
-@import "./assets/css/fonts.css"; /*always execute*/
-@import "./assets/css/reset.css";
-/* @import "./assets/css/screen.css" screen;
-@import "./assets/css/print.css" print; */
-@import "./assets/css/screen_print.css" screen, print;
-@import "./assets/css/screen_print.css" not speech;
-
-/* @import <"source"> <media-query/-ies> 
-print
-all
-screen
-speech */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,22 +5,16 @@ speech */
 }
 
 .text {
-  font-size: 10px;
+  font-size: 20px;
 }
 
-@media screen {
+@media not screen and (min-width: 600px) {
   .text {
-    color: blue;
+    color: green;
   }
 }
 
-@media screen and (width: 600px) {
-  .text {
-    border: 1px solid black;
-  }
-}
-
-@media print and (color: 3) {
+@media only screen {
   .text {
     text-decoration: underline;
   }
